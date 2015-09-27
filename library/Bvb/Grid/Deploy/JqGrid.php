@@ -1402,6 +1402,19 @@ JS;
     }
 
     /**
+     * Add a Postcommand
+     *
+     * @param $command
+     *
+     * @return JqGridCommand
+     */
+    public function addPostCommand($command)
+    {
+        $this->_postCommands[] = $command;
+        return $this;
+    }
+
+    /**
      * Will return actual version of this file
      *
      * @return string
